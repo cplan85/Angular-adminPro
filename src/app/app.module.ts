@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +11,7 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { ProgressComponent } from './pages/progress/progress.component';
+import { GraphicsComponent } from './pages/graphics/graphics.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { ProgressComponent } from './pages/progress/progress.component';
     BreadcrumbsComponent,
     SidebarComponent,
     HeaderComponent,
-    ProgressComponent
+    ProgressComponent,
+    GraphicsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { GraphicsComponent } from './pages/graphics/graphics.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { RegisterComponent } from './auth/register/register.component';

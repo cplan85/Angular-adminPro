@@ -6,11 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class IncrematorComponent implements OnInit {
+export class IncrematorComponent {
 
-  constructor() { }
+  progress:number = 40;
 
-  ngOnInit(): void {
+  get getPercentage() {
+    return `${this.progress}%`
+  }
+
+  changeValue(value: number) {
+
+    if(this.progress >= 100 && value >= 0) {
+      this.progress =100;
+    }
+
+    if(this.progress <= 0 && value < 0) {
+      this.progress =0;
+    }
+    this.progress = this.progress + value;
   }
 
 }

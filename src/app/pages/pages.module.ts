@@ -1,4 +1,6 @@
 import { SharedModule } from './../shared/shared.module';
+import { ComponentsModule } from '../components/components.module';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -7,6 +9,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { GraphicsComponent } from './graphics/graphics.component';
 import { PagesComponent } from './pages.component';
 import { AppRoutingModule } from '../app-routing.module';
+
 
 
 @NgModule({
@@ -25,6 +28,7 @@ import { AppRoutingModule } from '../app-routing.module';
 
   imports: [
     CommonModule,
+    ComponentsModule,
     AppRoutingModule,
     FormsModule,
     SharedModule

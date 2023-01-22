@@ -2,18 +2,18 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Striped Progress bar</h4>
+                            <h4 class="card-title">Striped Progress bar {{progress1 }}</h4>
                             <div class="progress m-t-20">
                                 <div class="progress-bar bg-info progress-bar-striped active" 
                                  style="height:5px;" 
-                                
+                                    [style.width]="getProgress1"
                                  role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
                             </div>
 
                             <div class="progress m-t-20">
                                 <div class="progress-bar bg-info progress-bar-striped active" 
                                  style="height:5px;" 
-                                
+                                 [style.width]="getProgress2" 
                                  role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
                             </div>
                             
@@ -25,14 +25,19 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-             <app-incremator></app-incremator>
+             <app-incremator 
+             (outputValue)="progress1 = $event" 
+             [btnClass]="'btn-info'"
+             [progress]="25" ></app-incremator>
         </div>
         </div>
     </div>
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-incremator></app-incremator>
+                <app-incremator
+                (outputValue)="progress2 = $event"
+                ></app-incremator>
         </div>
         </div>
     </div>

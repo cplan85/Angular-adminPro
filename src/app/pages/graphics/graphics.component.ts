@@ -10,18 +10,8 @@ import { ChartData, ChartEvent, ChartType } from 'chart.js';
 export class GraphicsComponent {
 
     // Doughnut
-    public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ];
-    public doughnutChartData: ChartData<'doughnut'> = {
-      labels: this.doughnutChartLabels,
-      datasets: [
-        { 
-          data: [ 350, 450, 100 ],
-          backgroundColor: ['#9E120E', '#FF5800', '#FFB414']
-        },
-       
-      ]
-    };
-    public doughnutChartType: ChartType = 'doughnut';
+  public labels1 = [ 'Tacos', 'In-Store Sales', 'Mail-Order Sales' ];
+  public data1 = [ 350, 450, 100 ];
   
       // events
   public chartClicked({ event, active }: { event: ChartEvent, active: {}[] }): void {
@@ -31,12 +21,6 @@ export class GraphicsComponent {
   public chartHovered({ event, active }: { event: ChartEvent, active: {}[] }): void {
     console.log(event, active);
   }
-
-  public colors: Array<any> = [
-    { backgroundColor:'#9E120E' },
-    { backgroundColor: 'green' },
-
-  ]
 
   constructor() { }
 

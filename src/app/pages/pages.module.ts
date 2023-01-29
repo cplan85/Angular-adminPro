@@ -10,7 +10,6 @@ import { GraphicsComponent } from './graphics/graphics.component';
 import { PagesComponent } from './pages.component';
 import { AppRoutingModule } from '../app-routing.module';
 
-import { NgChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -32,7 +31,6 @@ import { NgChartsModule } from 'ng2-charts';
     ComponentsModule,
     AppRoutingModule,
     FormsModule,
-    NgChartsModule,
     SharedModule
   ]
 })

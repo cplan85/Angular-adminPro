@@ -9,6 +9,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { GraphicsComponent } from './graphics/graphics.component';
 import { PagesComponent } from './pages.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -17,13 +18,15 @@ import { AppRoutingModule } from '../app-routing.module';
   DashboardComponent,
   ProgressComponent,
   GraphicsComponent,
-  PagesComponent
+  PagesComponent,
+  AccountSettingsComponent
   ],
   exports: [
-    DashboardComponent,
+  DashboardComponent,
   ProgressComponent,
   GraphicsComponent,
-  PagesComponent
+  PagesComponent,
+  AccountSettingsComponent
   ],
 
   imports: [

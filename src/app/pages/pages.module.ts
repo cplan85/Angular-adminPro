@@ -10,6 +10,8 @@ import { GraphicsComponent } from './graphics/graphics.component';
 import { PagesComponent } from './pages.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 
 
@@ -19,7 +21,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
   ProgressComponent,
   GraphicsComponent,
   PagesComponent,
-  AccountSettingsComponent
+  AccountSettingsComponent,
+  PromisesComponent,
+  RxjsComponent
   ],
   exports: [
   DashboardComponent,

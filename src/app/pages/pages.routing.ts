@@ -1,3 +1,5 @@
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { PromisesComponent } from './promises/promises.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PagesComponent } from './pages.component';
 import { GraphicsComponent } from './graphics/graphics.component';
@@ -16,6 +18,8 @@ const routes: Routes = [
       {path: 'progress', component: ProgressComponent},
       {path: 'graphics1', component: GraphicsComponent},
       {path: 'account-settings', component: AccountSettingsComponent},
+      {path: 'promises', component: PromisesComponent},
+      {path: 'rxjs', component: RxjsComponent},
       {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     ]
   

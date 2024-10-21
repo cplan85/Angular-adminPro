@@ -12,6 +12,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromisesComponent } from './promises/promises.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { LearningRxjsComponent } from './learning-rxjs/learning-rxjs.component';
 
 
 
@@ -23,7 +24,8 @@ import { RxjsComponent } from './rxjs/rxjs.component';
   PagesComponent,
   AccountSettingsComponent,
   PromisesComponent,
-  RxjsComponent
+  RxjsComponent,
+  LearningRxjsComponent
   ],
   exports: [
   DashboardComponent,
